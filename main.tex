@@ -1,0 +1,253 @@
+\documentclass[10pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage{csquotes}
+
+%%%%%%%%%%%%%%%% moderncv themes
+\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%%%%%%%%%%%%%%%% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\usepackage{hyperref}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\maketitlenamewidth}{10cm}        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%%%%%%%%%%%%%%%% personal data
+\firstname{Daniel}
+\familyname{Hain}
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{Algade 54}{9000 Aalborg, Denmark}    % optional, remove the line if not wanted
+\mobile{+45~526~805~61}                     % optional, remove the line if not wanted
+\homepage{github.com/daniel-hain}        % optional, remove the line if not wanted
+\email{daniel.hain82@gmail.com}          % optional, remove the line if not wanted
+\photo[64pt][0.4pt]{picture}                  % '64pt' is the height the picture must be resized to, 
+%\quote{\enquote{All men by nature desire knowledge.} -- Aristotle}   
+
+
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+\usepackage{multibib}
+\newcites{article,book,wp}{{Journal Articles},{Book Chapters},{Reports, Working Papers \& Preprints (selected)}}
+
+% Hyoperref
+\definecolor{aaublue}{RGB}{33,26,82}
+
+\usepackage{hyperref}
+\hypersetup{%
+	%pdfpagelabels=true,%
+	plainpages=false,%
+	pdfauthor={Author},%
+	pdftitle={Title},%
+	pdfsubject={Subject},%
+	bookmarksnumbered=true,%
+	colorlinks=true,%
+	citecolor=aaublue,%
+	filecolor=aaublue,%
+	linkcolor=aaublue,% you should probably change this to black before printing
+	urlcolor=aaublue,%
+	pdfstartview=FitH%
+}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Current Position}
+
+\cventry{since 2020} {Associate Professor (Data Science \& Innovation Economics)}{Aalborg University Business School}{}{DK}  
+{Research Lead (Data Science) at the \href{https://www.business.aau.dk/research/ai-growth-lab/}{AI:Growth Lab} \\
+Teaching \& research on data science, machine learning, AI industry dynamics, complex systems, technological change}
+
+\cventry{since 2020} {External Lecturer}{Copenhagen Business School}{}{DK}  
+{Module coordinator \enquote{Data Science for Business Applications}}
+
+\cventry{2016-2020}	{Assistant Professor (Quant. Methods \& Industry Dynamics)}{Aalborg University} {}{DK}  
+{Teaching \& research on applied econometrics, network analysis, and data science} 
+
+\cventry{2014}{Visiting Research Scholar}{Stanford University} {}{US}  
+{Focus on networks analysis, complex systems, machine learning, natural-language-processing}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Professional Experience}
+
+\cventry{2010--2011}{Research Assistant}{Fraunhofer Institute for Industrial Engineering} {Stuttgart}{DE}  
+{Information \& knowledge management, business intelligence, process optimization and simulation}
+
+\cventry{2009--2010}{Management Consultant}{Mercedes Benz}{Stuttgart}{DE} 
+{Supplier management and audit, process simulation and optimization}
+
+\section{Education}
+
+\cventry{2015}{PhD. Economics}{Aalborg University}{}{DK}
+{Focus on network \& complex system analysis, applied econometrics, energy system dynamics}
+\cventry{~}{Thesis:}{The Network Dynamics of Financing Technological (R-) Evolution: The Case of Technological Change in the Renewable Energy Area}{}{}{Supervision: Prof. Jesper Lindgaard Christensen \& Prof. Birgitte Gregersen, Aalborg University}
+
+\cventry{2012}{M.Sc. Economics}{Aalborg University}{}{DK}
+{Course: Innovation Economics}  
+
+\cventry{2012}{M.Sc. Int. Business \& Economics}{University of Hohenheim}{}{DE}
+{Course: International Business and Economics} 
+\cventry{~}{Thesis:}{Trust, Networks and the Finance of Innovation. An Empirical Study on Syndicated Cross-Border Venture Capital Investments}{Supervision: Prof. Bengt-{\AA}ke Lundvall, Aalborg University \& Prof. Andreas Pyka, University of Hohenheim}{}{}
+
+\cventry{2009}{Dipl.-Wirt.-Ing.}{University of Stuttgart}{}{DE}
+{Course: Industrial Engineering, specialization  on process optimization and simulation}  
+\cventry{~}{Thesis:}{Development of a Dynamic, Process-Embedded \& Event-Driven Supply Chain Management System}{Supervision: Prof. Klaus Thaler, University of Stuttgart}{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Honors \& Awards }
+
+\cventry{2018}{Winning team of the $1^{st}$ OECD \& EUIPO \enquote{Big Data Analytics Challenge}}{Intellectual Property Statistics for Decision Makers (IPSDM) Conference 2018}{Alicante, ES} {\cite{2020arXiv200312303H}} {}
+
+\cventry{2017}{Best paper in track \enquote{International HRM and cross-cultural issues}} {European International Business Academy (EIBA) conference 2017}{Milan, IT} {\cite{wang2020cultural}} {}
+
+\cventry{2013}{Best paper in track \enquote{Venture Capital, Finance, and Regulation}}{Institute for Small Business and Entrepreneurship (ISBE) conference 2013}{Cardiff, UK} {\cite{hain2019capital}} {}
+
+\section{Projects, Grants \& Funding}
+
+\cventry{Since 2020}{\href{https://aidenmark.dk/}{AI:DK}}{role: core project team}{funded by: Danish Industry Foundation}{total amount: 34.5 mio. dkk}
+{National strategic funding for AI competence development in industry. My responsibilities include the supervision and coordination of AI application pilots in companies, and the development of an AI e-learning platform.}
+
+\cventry{2019}{PatExplore Proof-of-Concept}{role: project lead}{funded by: AAU Innovation \& Technology Transfer Office} {total amount: 500.000 dkk}
+{Technology-Transfer Grant. Our team develops a proof-of-concept for an AI powered patent search and landcaping software solution based on patent full-text.}
+
+\cventry{2019}{ReachAAUT}{role: project co-lead} {funded by: AAU Social Sciences Faculty} {total amount: 500.000 dkk}
+{Internal strategic funding. Our teams builds capacities and provides guidance for modern digital research dissemination.}
+
+\cventry{2019}{China-EU cooperation activities in AI industry research}{}{funded by: Sino Danish Center} {total amount: ca. 750.000 dkk} 
+{Collaboration and activity funding. Facilitated multiple projects aiming at collaborative research with Chinese researchers on AI industry dynamics and the application of data science methods for technology system mapping. Co-funded the two PhD. students supervised by me.}
+
+\cventry{2014}{SCANCOR Stanford Scholarship}{Role: Grant receiver} {funded by: Scandinavian Consortium for Organizational Research} {} 
+{Mobility grant which facilitated my research fellowship at Stanford University.}
+
+\cventry{2012-2015}{\href{https://www.eis-all.dk/}{Strategic Alliance on Energy Innovation Systems (EIS)}}{role: project team} {funded by: Danish Council for Strategic Research}{total amount: 20 mio. dkk}
+{National strategic funding for energy innovation system mapping. My responsibilities included sub-modules in \enquote{WP 1: Indicators of energy innovation systems}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Academic Citizenship (Selected Activities)}
+
+\cventry{2021}{Guest-Editor}{Industry \& Innovation}{}{}  
+{Special Issue on on \enquote{Challenging fundamentals of innovation dynamics in the age of AI}}
+
+\cventry{2020}{Lead Guest-Editor}{Scientometrics}{}{}  
+{Special Issue on on \enquote{Machine Learning and AI for Science, Technology, and (Eco-)System Mapping and Forecasting}}
+
+\cventry{2018}{Organizer \& Speaker}{DRUID summer conference}{Copenhagen, DK}{}  
+{Professional Development Workshop on \enquote{Data Science and Machine Learning for Innovation Studies}}
+
+\cventry{2018}{Organizer \& Speaker}{ISS conference}{Seoul, KR}{}  
+{Special Session on \enquote{AI, Data Science and Machine Learning for Industry Dynamics Research}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Teaching Portfolio}
+
+\subsection{Graduate Level}
+
+\cventry{Since 2021}{Technology Literacy and Digitalisation in Organisations} {lecturer} {Aalborg University Business School} {M.Sc. elective, 5 ECTS}
+{Lectures on the fundamentals of machine learning and artificial intelligence for data driven decision making and business models} 
+
+\cventry{Since 2020}{Data Science for Business Applications} {module coordinator, main lecturer} {Copenhagen Business School} {M.Sc. elective, 15 ECTS}
+{Applied introduction to machine learning, network analysis, natural language processing} 
+
+\cventry{Since 2020}{Managing the industrial revolution} {guest lecturer} {Maastricht University} {M.Sc., 5 ECTS}
+{Module on the use of machine learning for policy analysis} 
+
+\cventry{Since 2020}{Unstructured Data Analysis} {guest module coordinator, main lecturer} {Strasbourg University} {M.Sc. Data Science (Econ.), 5 ECTS}
+{Applied introduction to network analysis and natural language processing for economists} 
+
+\cventry{Since 2019}{Innovation Systems and Government-Business Relation}{lecturer}{Sino Danish Center}{M.Sc. Innovation Management, 10 ECTS} 
+{Lecture series on applied and data-driven innovation system mapping, network analysis, scientometrics}
+
+\cventry{Since 2018}{Social Data Science} {founder, semester coordinator, main lecturer} {Aalborg University} {M.Sc. interdisciplinary, 30 ECTS}
+{Specialization semester, providing an applied introduction to machine learning, network analysis, natural language processing, and deep learning} 
+
+\cventry{2016-2019}{Scientific Methods II - Applied Econometric}{Module coordinator, main lecturer} {Aalborg University} {M.Sc. Innovation Economics, 5 ECTS}
+{Advanced applied econometrics for innovation economists}
+
+
+\subsection{Undergraduate Level}
+
+\cventry{2017-2020}{Corporate Finance}{module coordinator, main lecturer}{Aalborg University}{B.Sc. International Business, 10 ECTS}  
+{Theory \& practice of firm valuation, financial decision making}
+
+\subsection{Supervision}
+
+\cventry{Since 2019}{PhD. student supervision}{}{Aalborg University}{}  
+{Main supervisor for PhD. student projects (Ivan Nechaev)} % , Eskil Anderson
+
+\cventry{Since 2014}{student supervision}{}{Aalborg University}{B.Sc. \& M.Sc.}  
+{Frequent supervision of students for semester projects, bachelor \& master thesis}
+
+\subsection{Other teaching activities (selected)}
+
+\cventry{Since 2020}{Social Data Science winterschool}{organizer \& main lecturer}{Aalborg Univerity}{PhD. students, 4 ECTS}
+{1-week applied introduction to data science for social science researchers}
+
+\cventry{2019}{Data Science for Business Leaders workshop}{organizer \& main lecturer}{Sino Danish Center, Beijing, CN}{professionals}
+{1-day intuitive high-level introduction to machine learning for management professionals at the SDC \enquote{Corporate Innovation Days}}
+
+\cventry{2018}{Africalics Innovation \& Development summerschool}{organizer \& main lecturer}{University of Marrakech, MA}{PhD. students, 2 ECTS}  
+{3-day module on \enquote{Data Science for Innovation Studies and Development Economics}}
+
+
+\subsection{Formal pedagogical training}
+
+\cventry{2017-2019}{Course: University Pedagogy for Assistant Professors (Adjunktp{\ae}dagogikum)}{}{}{}
+{Assistant professor course on university pedagogy, teaching, supervision, coordination}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newpage
+% \renewcommand{\bibname}{Publications} % changes default name Bibliography to References
+% \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}  
+
+
+% Publications from a BibTeX file using the multibib package
+\section{Publications}
+
+\nocitearticle{*}
+\bibliographystylearticle{unsrt}
+\bibliographyarticle{publications_article.bib}
+
+\nocitebook{*}
+\bibliographystylebook{unsrt}
+\bibliographybook{publications_book.bib} 
+
+\nocitewp{*}
+\bibliographystylewp{unsrt}
+\bibliographywp{publications_wp.bib}
+
+\end{document}
+
+%% end of file `template.tex'.
